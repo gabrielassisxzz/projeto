@@ -1,0 +1,50 @@
+.agradecimento-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centralização vertical perfeita */
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 50px; /* Espaçamento interno */
+  position: relative;
+  font-family: 'San Francisco', Helvetica, Arial, sans-serif; /* Fonte consistente */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.4; /* Melhor legibilidade */
+}
+
+p {
+  font-size: 1.2em;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.6; /* Melhor legibilidade */
+}
+
+.agradecimento-container::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 200px;
+  height: 200px;
+  top: 20px;
+  background-image: url('https://www.freeiconspng.com/uploads/apple-icon-4.png');
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  .agradecimento-container::before {
+      width: 150px;
+      height: 150px;
+  }
+}
